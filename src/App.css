@@ -151,3 +151,28 @@ button:hover {
   background-color: var(--background-color);
   cursor: pointer;
 }
+
+@media (max-width: 425px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .score-bar {
+    flex-direction: column;
+    padding-top: 8px;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .counter {
+    font-size: 20px;
+  }
+
+  button {
+    position: relative;
+    left: auto;
+    transform: none;
+  }
+}
