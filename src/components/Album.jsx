@@ -1,8 +1,6 @@
-//http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=42559a8a182d685d1994eae2278e2c56&artist=The+Rolling+Stones&album=Some+Girls&format=json
-
 import { useState, useEffect } from "react";
 export default function Album({ album, artist, id, onClick }) {
-  const baseUrl = "http://ws.audioscrobbler.com/2.0/";
+  const baseUrl = "https://ws.audioscrobbler.com/2.0/";
   const method = "album.getinfo";
   const api_key = "42559a8a182d685d1994eae2278e2c56";
 
